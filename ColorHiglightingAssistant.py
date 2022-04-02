@@ -26,6 +26,7 @@ root.mainloop()
 
 def hex_to_rgb(num):
     num=num[1:]
+    num=num[::-1]
     return tuple(int(num[i:i+2], 16) for i in (0, 2, 4))
 
 #read the image
