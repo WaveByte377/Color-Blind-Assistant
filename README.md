@@ -10,7 +10,7 @@ Our project contains two apps: **Color Highlighting Assistant** and **Color Tell
 ![Screenshot 2022-04-02 104740](https://user-images.githubusercontent.com/102852068/161375351-30e6601f-5040-41f7-bb55-4f9f51c35058.png)
 ***
 ## *Color Highlighting Assistant* is an app which highlights certain color of an image, enabling daltonists to see the differrence.
-***
+
 The first image is before highlighting and second after highlighting.
 ![imgonline-com-ua-twotoone-bz676qrDleBCF7V](https://user-images.githubusercontent.com/102852068/161375821-266ccfcf-750a-4f63-98f3-e2ad5ba259fe.jpg)
 ***
