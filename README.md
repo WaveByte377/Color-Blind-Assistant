@@ -29,7 +29,8 @@ First image is before highlighting and second image after highlighting.
 ***
 ## Project Authors
 This project was built during online High School Hackathon which lasted 48 hours.
-The team consisted of first-year students from "Bora Stankovic" High School and they are:
+The team consisted of first-year students from "Bora Stankovic" High School,Nis:
+Names:
 - Ana Đokić (Artist)
 - Jakov Sekulić (Programmer)
 - Vuk Aleksandrov (Programmer)
