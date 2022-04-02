@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import math
 import sys
+import os.path
 
 winoffsetx = 210
 winoffsety = 230
@@ -152,16 +153,6 @@ def drawAddit(frame, r, g, b, text):
     cv2.putText(frame, text, (80,height-30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2)
     crosshair(mouseX, mouseY, frame)
 
-print("Opening webcam...")
-# define a video capture object
-vid = cv2.VideoCapture(0)
-
-if vid is None or not vid.isOpened():
-    print("Cannot access webcam")
-    exit()
-    
-print("Webcam open!")
-
 fr = 0
 fb = 0
 fg = 0
@@ -169,18 +160,21 @@ fcolour = ""
 mouseX = 0
 mouseY = 0
 
+path = input("Insert path: ")
+if not os.path.isfile(path):
+    print("Invalid path")
+    exit()
+
 def onMouse(event,x,y,flags,param):
     global mouseX, mouseY
     mouseX = x
     mouseY = y
     
-cv2.namedWindow('Camera', cv2.WINDOW_NORMAL)
-cv2.setMouseCallback('Camera',onMouse)
+cv2.namedWindow('ColorTellingAssistant', cv2.WINDOW_NORMAL)
+cv2.setMouseCallback('ColorTellingAssistant',onMouse)
 
 while True:
-    
-    # Capture the video frame by frame
-    ret,frame = vid.read()
+    frame = cv2.imread(path)
 
     # Get frame dimensions
     dim=frame.shape
@@ -194,15 +188,12 @@ while True:
 
     drawAddit(frame, fr, fg, fb, fcolour)
     
-    cv2.imshow('Camera', frame)
+    cv2.imshow('ColorTellingAssistant', frame)
 
     k = cv2.waitKey(1) & 0xFF
-    if not cv2.getWindowProperty('Camera', cv2.WND_PROP_VISIBLE):
+    if not cv2.getWindowProperty('ColorTellingAssistant', cv2.WND_PROP_VISIBLE):
         break
     if k == 27:  # Key code for ESC
         break 
-
-# After the loop release the cap object
-vid.release()
 # Destroy all the windows
 cv2.destroyAllWindows()
