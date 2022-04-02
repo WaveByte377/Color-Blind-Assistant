@@ -9,9 +9,9 @@ Our project contains two apps: **Color Highlighting Assistant** and **Color Tell
 ### *Color Telling Assistant* is an app which tells the color of the certain part of an image just by pointing on it.
 ![Screenshot 2022-04-02 104740](https://user-images.githubusercontent.com/102852068/161375351-30e6601f-5040-41f7-bb55-4f9f51c35058.png)
 ***
-## *Color Highlighting Assistant* is an app which highlights certain color of an image, enabling daltonist see the differrence.
+## *Color Highlighting Assistant* is an app which highlights certain color of an image, enabling daltonists to see the differrence.
 ***
-First image is before highlighting and second image after highlighting.
+The first image is before highlighting and second after highlighting.
 ![imgonline-com-ua-twotoone-bz676qrDleBCF7V](https://user-images.githubusercontent.com/102852068/161375821-266ccfcf-750a-4f63-98f3-e2ad5ba259fe.jpg)
 ***
 ## Getting Started
@@ -28,8 +28,8 @@ First image is before highlighting and second image after highlighting.
 - Next in command line enter image path and then a processed image will pop up in new window 
 ***
 ## Project Authors
-This project was built during online High School Hackathon which lasted 48 hours.
-The team consisted of first-year students from "Bora Stankovic" High School,Nis:
+This project was built during the online High School Hackathon which lasted 48 hours.
+The team consisted of first-year students from "Bora Stankovic" High School, Nis:
 Names:
 - Ana Đokić (Artist)
 - Jakov Sekulić (Programmer)
